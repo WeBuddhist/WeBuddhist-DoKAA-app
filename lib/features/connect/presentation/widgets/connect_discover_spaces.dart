@@ -225,6 +225,16 @@ List<Widget> buildDiscoverSpaceSlivers(
           padding: EdgeInsets.symmetric(vertical: 16),
           child: Center(child: CircularProgressIndicator()),
         ),
+      )
+    // A failed next page: scrolling no longer resends it, this row does.
+    else if (state.error != null && state.hasMore)
+      SliverToBoxAdapter(
+        child: Center(
+          child: TextButton(
+            onPressed: notifier.retry,
+            child: Text(context.l10n.retry),
+          ),
+        ),
       ),
   ];
 }

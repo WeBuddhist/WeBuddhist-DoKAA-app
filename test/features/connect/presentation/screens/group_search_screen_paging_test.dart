@@ -44,6 +44,8 @@ class _FakeConnectRepository extends Fake implements ConnectRepository {
   final discoverSkips = <int>[];
   Future<Either<Failure, DiscoverGroupsPage>> Function(int skip) onSearch =
       (skip) async => Right(_page('s', skip: skip));
+  Future<Either<Failure, DiscoverGroupsPage>> Function(int skip) onDiscover =
+      (skip) async => Right(_page('d', skip: skip, total: 100));
 
   @override
   Future<Either<Failure, DiscoverGroupsPage>> getDiscoverGroups({
@@ -59,7 +61,7 @@ class _FakeConnectRepository extends Fake implements ConnectRepository {
       return onSearch(skip);
     }
     discoverSkips.add(skip);
-    return Future.value(Right(_page('d', skip: skip, total: 100)));
+    return onDiscover(skip);
   }
 
   @override
@@ -253,6 +255,56 @@ void main() {
 
       expect(repository.discoverSkips, contains(20));
       expect(repository.searchSkips, [0]);
+    });
+
+    testWidgets('a failed "Looking for" page waits for its retry row', (
+      tester,
+    ) async {
+      var fail = true;
+      repository.onDiscover =
+          (skip) async =>
+              fail
+                  ? const Left(NetworkFailure('offline'))
+                  : Right(_page('d', skip: skip, total: 100));
+      await pumpScreen(tester);
+
+      await tester.drag(find.byType(CustomScrollView), const Offset(0, -5000));
+      await tester.pump();
+      expect(repository.discoverSkips, [20]);
+
+      // More scrolling at the bottom doesn't resend the failed page.
+      await tester.drag(find.byType(CustomScrollView), const Offset(0, -500));
+      await tester.pump();
+      await tester.drag(find.byType(CustomScrollView), const Offset(0, 300));
+      await tester.drag(find.byType(CustomScrollView), const Offset(0, -500));
+      await tester.pump();
+      expect(repository.discoverSkips, [20]);
+
+      fail = false;
+      await tester.tap(find.text('Retry'));
+      await tester.pump();
+      await tester.pump();
+
+      expect(repository.discoverSkips, [20, 20]);
+      expect(container.read(discoverGroupsProvider).groups, hasLength(40));
+      expect(find.text('Retry'), findsNothing);
+    });
+
+    testWidgets('a new query shows a progress bar over the old rows', (
+      tester,
+    ) async {
+      await pumpScreen(tester);
+      await typeQuery(tester, 'a');
+      expect(find.byType(LinearProgressIndicator), findsNothing);
+
+      await tester.enterText(find.byType(TextField), 'ab');
+      await tester.pump();
+      expect(find.text('s 0'), findsOneWidget);
+      expect(find.byType(LinearProgressIndicator), findsOneWidget);
+
+      await tester.pump(const Duration(milliseconds: 550));
+      await tester.pump();
+      expect(find.byType(LinearProgressIndicator), findsNothing);
     });
   });
 }

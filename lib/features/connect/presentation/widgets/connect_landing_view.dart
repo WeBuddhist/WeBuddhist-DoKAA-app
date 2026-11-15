@@ -64,7 +64,7 @@ class _ConnectLandingViewState extends ConsumerState<ConnectLandingView> {
               if (notification.depth == 0) _onScroll(notification.metrics);
               if (notification.metrics.pixels >=
                   notification.metrics.maxScrollExtent - _paginationThreshold) {
-                notifier.loadMore();
+                notifier.loadMoreFromScroll();
               }
               return false;
             },

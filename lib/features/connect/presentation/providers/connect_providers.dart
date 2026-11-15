@@ -147,6 +147,13 @@ class DiscoverGroupsNotifier extends StateNotifier<DiscoverGroupsState> {
     }
   }
 
+  /// Paging from scrolling near the end. After a failed page it waits for the
+  /// retry row, so every scroll event doesn't send the page again.
+  Future<void> loadMoreFromScroll() async {
+    if (state.error != null) return;
+    await loadMore();
+  }
+
   Future<void> loadMore() async {
     if (state.isLoadingMore ||
         !state.hasMore ||

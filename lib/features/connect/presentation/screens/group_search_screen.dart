@@ -51,7 +51,7 @@ class _GroupSearchScreenState extends ConsumerState<GroupSearchScreen> {
   void _onScroll() {
     final position = _scrollController.position;
     if (position.pixels < position.maxScrollExtent - 200) return;
-    ref.read(discoverGroupsProvider.notifier).loadMore();
+    ref.read(discoverGroupsProvider.notifier).loadMoreFromScroll();
   }
 
   /// Called as the last result is built, i.e. once it scrolls within the
@@ -245,6 +245,10 @@ class _GroupSearchScreenState extends ConsumerState<GroupSearchScreen> {
     }
 
     return [
+      // A new query is loading: the previous query's rows stay until its
+      // first page lands, under a thin bar so they don't look like the answer.
+      if (state.isLoading)
+        const SliverToBoxAdapter(child: LinearProgressIndicator(minHeight: 2)),
       SliverList.builder(
         itemCount: state.results.length,
         itemBuilder: (context, index) {
