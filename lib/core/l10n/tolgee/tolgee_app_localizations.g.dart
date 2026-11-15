@@ -1178,10 +1178,53 @@ class TolgeeAppLocalizations extends AppLocalizations {
   );
 
   @override
-  String get connect_popular_spaces => TolgeeBridge.get(
+  String get connect_looking_for => TolgeeBridge.get(
     localeName,
-    'connect_popular_spaces',
-    () => _fallback.connect_popular_spaces,
+    'connect_looking_for',
+    () => _fallback.connect_looking_for,
+  );
+
+  @override
+  String get connect_sort_spaces => TolgeeBridge.get(
+    localeName,
+    'connect_sort_spaces',
+    () => _fallback.connect_sort_spaces,
+  );
+
+  @override
+  String get connect_sort_popular => TolgeeBridge.get(
+    localeName,
+    'connect_sort_popular',
+    () => _fallback.connect_sort_popular,
+  );
+
+  @override
+  String get connect_sort_newly_added => TolgeeBridge.get(
+    localeName,
+    'connect_sort_newly_added',
+    () => _fallback.connect_sort_newly_added,
+  );
+
+  @override
+  String get connect_sort_most_active => TolgeeBridge.get(
+    localeName,
+    'connect_sort_most_active',
+    () => _fallback.connect_sort_most_active,
+  );
+
+  @override
+  String get connect_find_your_space => TolgeeBridge.get(
+    localeName,
+    'connect_find_your_space',
+    () => _fallback.connect_find_your_space,
+  );
+
+  @override
+  String connect_no_spaces_match(String query) => TolgeeBridge.format(
+    localeName,
+    'connect_no_spaces_match',
+    <String, Object>{'query': query},
+    () => _fallback.connect_no_spaces_match(query),
   );
 
   @override
@@ -1189,13 +1232,6 @@ class TolgeeAppLocalizations extends AppLocalizations {
     localeName,
     'connect_your_spaces',
     () => _fallback.connect_your_spaces,
-  );
-
-  @override
-  String get connect_find_a_space => TolgeeBridge.get(
-    localeName,
-    'connect_find_a_space',
-    () => _fallback.connect_find_a_space,
   );
 
   @override
