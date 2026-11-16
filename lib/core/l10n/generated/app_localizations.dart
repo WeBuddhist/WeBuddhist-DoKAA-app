@@ -1193,23 +1193,53 @@ abstract class AppLocalizations {
   /// **'Connect with your Buddhist community'**
   String get connect_landing_title;
 
-  /// No description provided for @connect_popular_spaces.
+  /// No description provided for @connect_looking_for.
   ///
   /// In en, this message translates to:
-  /// **'Popular spaces'**
-  String get connect_popular_spaces;
+  /// **'Looking for'**
+  String get connect_looking_for;
+
+  /// No description provided for @connect_sort_spaces.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort spaces'**
+  String get connect_sort_spaces;
+
+  /// No description provided for @connect_sort_popular.
+  ///
+  /// In en, this message translates to:
+  /// **'Popular'**
+  String get connect_sort_popular;
+
+  /// No description provided for @connect_sort_newly_added.
+  ///
+  /// In en, this message translates to:
+  /// **'Newly added'**
+  String get connect_sort_newly_added;
+
+  /// No description provided for @connect_sort_most_active.
+  ///
+  /// In en, this message translates to:
+  /// **'Most active'**
+  String get connect_sort_most_active;
+
+  /// No description provided for @connect_find_your_space.
+  ///
+  /// In en, this message translates to:
+  /// **'Find your space'**
+  String get connect_find_your_space;
+
+  /// Shown above the spaces list when a space search finds nothing
+  ///
+  /// In en, this message translates to:
+  /// **'No spaces match \"{query}\"'**
+  String connect_no_spaces_match(String query);
 
   /// No description provided for @connect_your_spaces.
   ///
   /// In en, this message translates to:
   /// **'Your spaces'**
   String get connect_your_spaces;
-
-  /// No description provided for @connect_find_a_space.
-  ///
-  /// In en, this message translates to:
-  /// **'Find a space'**
-  String get connect_find_a_space;
 
   /// No description provided for @connect_segment_my.
   ///
@@ -2405,6 +2435,30 @@ abstract class AppLocalizations {
   /// **'Edit profile'**
   String get settings_edit_profile;
 
+  /// No description provided for @settings_signed_in_with_google.
+  ///
+  /// In en, this message translates to:
+  /// **'Signed in with Google'**
+  String get settings_signed_in_with_google;
+
+  /// No description provided for @settings_signed_in_with_apple.
+  ///
+  /// In en, this message translates to:
+  /// **'Signed in with Apple'**
+  String get settings_signed_in_with_apple;
+
+  /// No description provided for @settings_signed_in_with_phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Signed in with phone number'**
+  String get settings_signed_in_with_phone;
+
+  /// No description provided for @settings_signed_in_as.
+  ///
+  /// In en, this message translates to:
+  /// **'Signed in as'**
+  String get settings_signed_in_as;
+
   /// No description provided for @settings_theme.
   ///
   /// In en, this message translates to:
@@ -3568,6 +3622,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Unable to join accumulation. Please try again'**
   String get group_accumulator_join_error;
+
+  /// No description provided for @group_accumulator_practice_unavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'This practice can\'t be opened right now.'**
+  String get group_accumulator_practice_unavailable;
 
   /// No description provided for @group_accumulator_join_before_practice.
   ///
@@ -6949,6 +7009,12 @@ abstract class AppLocalizations {
   /// **'Duration must be greater than 0'**
   String get timer_duration_must_be_greater_than_error;
 
+  /// No description provided for @timer_duplicate_setup.
+  ///
+  /// In en, this message translates to:
+  /// **'A timer with this duration, sound, and title already exists.'**
+  String get timer_duplicate_setup;
+
   /// No description provided for @splash_tagline_1.
   ///
   /// In en, this message translates to:
@@ -6978,6 +7044,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'hours'**
   String get timer_duration_hours;
+
+  /// No description provided for @timer_duration_hr.
+  ///
+  /// In en, this message translates to:
+  /// **'hr'**
+  String get timer_duration_hr;
 
   /// No description provided for @timer_duration_sec.
   ///
@@ -7164,6 +7236,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Versions'**
   String get reader_tab_versions;
+
+  /// No description provided for @chants_filter_all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get chants_filter_all;
+
+  /// No description provided for @chants_chant_books.
+  ///
+  /// In en, this message translates to:
+  /// **'Chant books'**
+  String get chants_chant_books;
+
+  /// No description provided for @chants_filter_single_chants.
+  ///
+  /// In en, this message translates to:
+  /// **'Single chants'**
+  String get chants_filter_single_chants;
+
+  /// No description provided for @chants_my_chant_books.
+  ///
+  /// In en, this message translates to:
+  /// **'My chantbooks'**
+  String get chants_my_chant_books;
+
+  /// No description provided for @chants_text_only.
+  ///
+  /// In en, this message translates to:
+  /// **'Text-only chants'**
+  String get chants_text_only;
+
+  /// No description provided for @chants_from_your_spaces.
+  ///
+  /// In en, this message translates to:
+  /// **'From your spaces'**
+  String get chants_from_your_spaces;
+
+  /// No description provided for @chants_explore_more.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore more'**
+  String get chants_explore_more;
+
+  /// No description provided for @chants_create_chant_book.
+  ///
+  /// In en, this message translates to:
+  /// **'Chant book'**
+  String get chants_create_chant_book;
+
+  /// No description provided for @chants_open_chant.
+  ///
+  /// In en, this message translates to:
+  /// **'Open chant'**
+  String get chants_open_chant;
+
+  /// No description provided for @chants_your_spaces.
+  ///
+  /// In en, this message translates to:
+  /// **'Your spaces'**
+  String get chants_your_spaces;
+
+  /// No description provided for @chants_other_spaces.
+  ///
+  /// In en, this message translates to:
+  /// **'Other spaces'**
+  String get chants_other_spaces;
+
+  /// No description provided for @chants_search_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search chants and chantbooks'**
+  String get chants_search_hint;
+
+  /// No description provided for @chants_cant_find.
+  ///
+  /// In en, this message translates to:
+  /// **'Can\'t find the text you\'re looking for?'**
+  String get chants_cant_find;
+
+  /// No description provided for @chants_request_text.
+  ///
+  /// In en, this message translates to:
+  /// **'Request text'**
+  String get chants_request_text;
+
+  /// No description provided for @chants_request_done.
+  ///
+  /// In en, this message translates to:
+  /// **'Requested'**
+  String get chants_request_done;
+
+  /// No description provided for @chants_request_sent.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks. We\'ve received your request.'**
+  String get chants_request_sent;
+
+  /// No description provided for @chants_request_limit.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve sent a lot of requests today. Please try again later.'**
+  String get chants_request_limit;
+
+  /// No description provided for @chants_with_audio.
+  ///
+  /// In en, this message translates to:
+  /// **'Chants with audio'**
+  String get chants_with_audio;
+
+  /// No description provided for @chants_audio_chants.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio chants'**
+  String get chants_audio_chants;
+
+  /// No description provided for @reader_no_resources_title.
+  ///
+  /// In en, this message translates to:
+  /// **'No commentaries or versions available for this segment'**
+  String get reader_no_resources_title;
+
+  /// No description provided for @reader_no_resources_subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'We add new texts regularly; check back soon'**
+  String get reader_no_resources_subtitle;
 }
 
 class _AppLocalizationsDelegate

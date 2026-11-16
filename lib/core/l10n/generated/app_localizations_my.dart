@@ -630,13 +630,30 @@ class AppLocalizationsMy extends AppLocalizations {
   String get connect_landing_title => 'Connect with your Buddhist community';
 
   @override
-  String get connect_popular_spaces => 'Popular spaces';
+  String get connect_looking_for => 'ရှာဖွေနေသည်';
 
   @override
-  String get connect_your_spaces => 'Your spaces';
+  String get connect_sort_spaces => 'အဖွဲ့များကို စီစဉ်ရန်';
 
   @override
-  String get connect_find_a_space => 'Find a space';
+  String get connect_sort_popular => 'လူကြိုက်များသော';
+
+  @override
+  String get connect_sort_newly_added => 'အသစ်ထည့်ထားသော';
+
+  @override
+  String get connect_sort_most_active => 'အလှုပ်ရှားဆုံး';
+
+  @override
+  String get connect_find_your_space => 'သင့်အဖွဲ့ကို ရှာဖွေပါ';
+
+  @override
+  String connect_no_spaces_match(String query) {
+    return '\"$query\" နှင့် ကိုက်ညီသော အဖွဲ့ မတွေ့ပါ';
+  }
+
+  @override
+  String get connect_your_spaces => 'သင့်အဖွဲ့များ';
 
   @override
   String get connect_segment_my => 'သင့်အဖွဲ့များ';
@@ -1325,6 +1342,18 @@ class AppLocalizationsMy extends AppLocalizations {
   String get settings_edit_profile => 'ပရိုဖိုင် ပြင်ဆင်ရန်';
 
   @override
+  String get settings_signed_in_with_google => 'Signed in with Google';
+
+  @override
+  String get settings_signed_in_with_apple => 'Signed in with Apple';
+
+  @override
+  String get settings_signed_in_with_phone => 'Signed in with phone number';
+
+  @override
+  String get settings_signed_in_as => 'Signed in as';
+
+  @override
   String get settings_theme => 'အပြင်အဆင်';
 
   @override
@@ -2002,6 +2031,10 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get group_accumulator_join_error =>
       'စုဆောင်းမှုတွင် ပါဝင်၍ မရပါ။ ထပ်ကြိုးစားပါ';
+
+  @override
+  String get group_accumulator_practice_unavailable =>
+      'This practice can\'t be opened right now.';
 
   @override
   String get group_accumulator_join_before_practice =>
@@ -4040,6 +4073,10 @@ class AppLocalizationsMy extends AppLocalizations {
       'ကြာချိန်သည် 0 ထက် ကြီးရပါမည်';
 
   @override
+  String get timer_duplicate_setup =>
+      'A timer with this duration, sound, and title already exists.';
+
+  @override
   String get splash_tagline_1 =>
       'ဗုဒ္ဓဘာသာဝင် ကျွန်ုပ်တို့ အတူတကွ ကျင့်ကြံကြသည်';
 
@@ -4055,6 +4092,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get timer_duration_hours => 'နာရီ';
+
+  @override
+  String get timer_duration_hr => 'hr';
 
   @override
   String get timer_duration_sec => 'စက္ကန့်';
@@ -4160,4 +4200,70 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get reader_tab_versions => 'Versions';
+
+  @override
+  String get chants_filter_all => 'All';
+
+  @override
+  String get chants_chant_books => 'Chant books';
+
+  @override
+  String get chants_filter_single_chants => 'Single chants';
+
+  @override
+  String get chants_my_chant_books => 'My chantbooks';
+
+  @override
+  String get chants_text_only => 'Text-only chants';
+
+  @override
+  String get chants_from_your_spaces => 'From your spaces';
+
+  @override
+  String get chants_explore_more => 'Explore more';
+
+  @override
+  String get chants_create_chant_book => 'Chant book';
+
+  @override
+  String get chants_open_chant => 'Open chant';
+
+  @override
+  String get chants_your_spaces => 'Your spaces';
+
+  @override
+  String get chants_other_spaces => 'Other spaces';
+
+  @override
+  String get chants_search_hint => 'Search chants and chantbooks';
+
+  @override
+  String get chants_cant_find => 'Can\'t find the text you\'re looking for?';
+
+  @override
+  String get chants_request_text => 'Request text';
+
+  @override
+  String get chants_request_done => 'Requested';
+
+  @override
+  String get chants_request_sent => 'Thanks. We\'ve received your request.';
+
+  @override
+  String get chants_request_limit =>
+      'You\'ve sent a lot of requests today. Please try again later.';
+
+  @override
+  String get chants_with_audio => 'Chants with audio';
+
+  @override
+  String get chants_audio_chants => 'Audio chants';
+
+  @override
+  String get reader_no_resources_title =>
+      'ဤအပိုင်းအတွက် အဖွင့်ကျမ်း သို့မဟုတ် ဗားရှင်း မရှိသေးပါ';
+
+  @override
+  String get reader_no_resources_subtitle =>
+      'ကျမ်းစာအသစ်များကို ပုံမှန်ထည့်နေပါသည်။ မကြာမီ ပြန်ကြည့်ပါ။';
 }

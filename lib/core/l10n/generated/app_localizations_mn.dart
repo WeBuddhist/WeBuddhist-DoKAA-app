@@ -623,13 +623,30 @@ class AppLocalizationsMn extends AppLocalizations {
   String get connect_landing_title => 'Connect with your Buddhist community';
 
   @override
-  String get connect_popular_spaces => 'Popular spaces';
+  String get connect_looking_for => 'Хайж буй';
 
   @override
-  String get connect_your_spaces => 'Your spaces';
+  String get connect_sort_spaces => 'Орон зайг эрэмбэлэх';
 
   @override
-  String get connect_find_a_space => 'Find a space';
+  String get connect_sort_popular => 'Алдартай';
+
+  @override
+  String get connect_sort_newly_added => 'Шинээр нэмэгдсэн';
+
+  @override
+  String get connect_sort_most_active => 'Хамгийн идэвхтэй';
+
+  @override
+  String get connect_find_your_space => 'Орон зайгаа олоорой';
+
+  @override
+  String connect_no_spaces_match(String query) {
+    return '\"$query\"-д тохирох орон зай олдсонгүй';
+  }
+
+  @override
+  String get connect_your_spaces => 'Таны орон зайнууд';
 
   @override
   String get connect_segment_my => 'Таны орон зай';
@@ -1321,6 +1338,18 @@ class AppLocalizationsMn extends AppLocalizations {
   String get settings_edit_profile => 'Профайл засах';
 
   @override
+  String get settings_signed_in_with_google => 'Signed in with Google';
+
+  @override
+  String get settings_signed_in_with_apple => 'Signed in with Apple';
+
+  @override
+  String get settings_signed_in_with_phone => 'Signed in with phone number';
+
+  @override
+  String get settings_signed_in_as => 'Signed in as';
+
+  @override
   String get settings_theme => 'Загвар';
 
   @override
@@ -1995,6 +2024,10 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get group_accumulator_join_error =>
       'Хуримтлалд нэгдэх боломжгүй байна. Дахин оролдоно уу';
+
+  @override
+  String get group_accumulator_practice_unavailable =>
+      'This practice can\'t be opened right now.';
 
   @override
   String get group_accumulator_join_before_practice =>
@@ -4011,6 +4044,10 @@ class AppLocalizationsMn extends AppLocalizations {
       'Duration must be greater than 0';
 
   @override
+  String get timer_duplicate_setup =>
+      'A timer with this duration, sound, and title already exists.';
+
+  @override
   String get splash_tagline_1 => 'We Buddhists practice together';
 
   @override
@@ -4024,6 +4061,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get timer_duration_hours => 'hours';
+
+  @override
+  String get timer_duration_hr => 'hr';
 
   @override
   String get timer_duration_sec => 'sec';
@@ -4129,4 +4169,70 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get reader_tab_versions => 'Хувилбарууд';
+
+  @override
+  String get chants_filter_all => 'Бүгд';
+
+  @override
+  String get chants_chant_books => 'Магтаалын ном';
+
+  @override
+  String get chants_filter_single_chants => 'Дан магтаал';
+
+  @override
+  String get chants_my_chant_books => 'Миний магтаалын ном';
+
+  @override
+  String get chants_text_only => 'Зөвхөн бичвэртэй магтаал';
+
+  @override
+  String get chants_from_your_spaces => 'Таны орон зайнаас';
+
+  @override
+  String get chants_explore_more => 'Бусдыг судлах';
+
+  @override
+  String get chants_create_chant_book => 'Магтаалын ном';
+
+  @override
+  String get chants_open_chant => 'Магтаал нээх';
+
+  @override
+  String get chants_your_spaces => 'Таны орон зайнууд';
+
+  @override
+  String get chants_other_spaces => 'Бусад орон зай';
+
+  @override
+  String get chants_search_hint => 'Магтаал болон магтаалын ном хайх';
+
+  @override
+  String get chants_cant_find => 'Хайж буй бичвэрээ олсонгүй юу?';
+
+  @override
+  String get chants_request_text => 'Бичвэр хүсэх';
+
+  @override
+  String get chants_request_done => 'Хүсэлт илгээсэн';
+
+  @override
+  String get chants_request_sent => 'Баярлалаа. Таны хүсэлтийг хүлээн авлаа.';
+
+  @override
+  String get chants_request_limit =>
+      'Та өнөөдөр олон хүсэлт илгээсэн байна. Дараа дахин оролдоно уу.';
+
+  @override
+  String get chants_with_audio => 'Аудиотой магтаал';
+
+  @override
+  String get chants_audio_chants => 'Аудио магтаал';
+
+  @override
+  String get reader_no_resources_title =>
+      'Энэ хэсэгт тайлбар эсвэл хувилбар байхгүй байна';
+
+  @override
+  String get reader_no_resources_subtitle =>
+      'Бид шинэ судар тогтмол нэмдэг; удахгүй дахин шалгаарай';
 }

@@ -622,13 +622,30 @@ class AppLocalizationsHi extends AppLocalizations {
   String get connect_landing_title => 'Connect with your Buddhist community';
 
   @override
-  String get connect_popular_spaces => 'Popular spaces';
+  String get connect_looking_for => 'खोज रहे हैं';
 
   @override
-  String get connect_your_spaces => 'Your spaces';
+  String get connect_sort_spaces => 'स्पेस क्रमबद्ध करें';
 
   @override
-  String get connect_find_a_space => 'Find a space';
+  String get connect_sort_popular => 'लोकप्रिय';
+
+  @override
+  String get connect_sort_newly_added => 'नए जोड़े गए';
+
+  @override
+  String get connect_sort_most_active => 'सबसे सक्रिय';
+
+  @override
+  String get connect_find_your_space => 'अपना स्पेस खोजें';
+
+  @override
+  String connect_no_spaces_match(String query) {
+    return '\"$query\" से मेल खाता कोई स्पेस नहीं मिला';
+  }
+
+  @override
+  String get connect_your_spaces => 'आपके स्पेस';
 
   @override
   String get connect_segment_my => 'आपके स्पेस';
@@ -1318,6 +1335,18 @@ class AppLocalizationsHi extends AppLocalizations {
   String get settings_edit_profile => 'प्रोफ़ाइल एडिट करें';
 
   @override
+  String get settings_signed_in_with_google => 'Signed in with Google';
+
+  @override
+  String get settings_signed_in_with_apple => 'Signed in with Apple';
+
+  @override
+  String get settings_signed_in_with_phone => 'Signed in with phone number';
+
+  @override
+  String get settings_signed_in_as => 'Signed in as';
+
+  @override
   String get settings_theme => 'थीम';
 
   @override
@@ -1988,6 +2017,10 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get group_accumulator_join_error =>
       'संचय में शामिल होने में असमर्थ। कृपया पुनः प्रयास करें';
+
+  @override
+  String get group_accumulator_practice_unavailable =>
+      'This practice can\'t be opened right now.';
 
   @override
   String get group_accumulator_join_before_practice =>
@@ -3997,6 +4030,10 @@ class AppLocalizationsHi extends AppLocalizations {
       'Duration must be greater than 0';
 
   @override
+  String get timer_duplicate_setup =>
+      'A timer with this duration, sound, and title already exists.';
+
+  @override
   String get splash_tagline_1 => 'We Buddhists practice together';
 
   @override
@@ -4010,6 +4047,9 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get timer_duration_hours => 'hours';
+
+  @override
+  String get timer_duration_hr => 'hr';
 
   @override
   String get timer_duration_sec => 'sec';
@@ -4115,4 +4155,70 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get reader_tab_versions => 'संस्करण';
+
+  @override
+  String get chants_filter_all => 'सभी';
+
+  @override
+  String get chants_chant_books => 'जप पुस्तकें';
+
+  @override
+  String get chants_filter_single_chants => 'एकल जप';
+
+  @override
+  String get chants_my_chant_books => 'मेरी जप पुस्तकें';
+
+  @override
+  String get chants_text_only => 'केवल पाठ वाले जप';
+
+  @override
+  String get chants_from_your_spaces => 'आपके स्पेस से';
+
+  @override
+  String get chants_explore_more => 'और देखें';
+
+  @override
+  String get chants_create_chant_book => 'जप पुस्तक';
+
+  @override
+  String get chants_open_chant => 'जप खोलें';
+
+  @override
+  String get chants_your_spaces => 'आपके स्पेस';
+
+  @override
+  String get chants_other_spaces => 'अन्य स्पेस';
+
+  @override
+  String get chants_search_hint => 'जप और जप पुस्तकें खोजें';
+
+  @override
+  String get chants_cant_find => 'जो पाठ आप ढूँढ रहे हैं वह नहीं मिला?';
+
+  @override
+  String get chants_request_text => 'पाठ का अनुरोध करें';
+
+  @override
+  String get chants_request_done => 'अनुरोध भेजा गया';
+
+  @override
+  String get chants_request_sent => 'धन्यवाद। हमें आपका अनुरोध मिल गया है।';
+
+  @override
+  String get chants_request_limit =>
+      'आज आप कई अनुरोध भेज चुके हैं। कृपया बाद में फिर कोशिश करें।';
+
+  @override
+  String get chants_with_audio => 'ऑडियो वाले जप';
+
+  @override
+  String get chants_audio_chants => 'ऑडियो जप';
+
+  @override
+  String get reader_no_resources_title =>
+      'इस खंड के लिए कोई टीका या संस्करण उपलब्ध नहीं है';
+
+  @override
+  String get reader_no_resources_subtitle =>
+      'हम नियमित रूप से नए ग्रंथ जोड़ते हैं; जल्द ही फिर देखें';
 }

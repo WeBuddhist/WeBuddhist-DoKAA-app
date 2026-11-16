@@ -618,13 +618,30 @@ class AppLocalizationsTh extends AppLocalizations {
   String get connect_landing_title => 'Connect with your Buddhist community';
 
   @override
-  String get connect_popular_spaces => 'Popular spaces';
+  String get connect_looking_for => 'กำลังมองหา';
 
   @override
-  String get connect_your_spaces => 'Your spaces';
+  String get connect_sort_spaces => 'เรียงลำดับกลุ่ม';
 
   @override
-  String get connect_find_a_space => 'Find a space';
+  String get connect_sort_popular => 'ยอดนิยม';
+
+  @override
+  String get connect_sort_newly_added => 'เพิ่มใหม่';
+
+  @override
+  String get connect_sort_most_active => 'เคลื่อนไหวมากที่สุด';
+
+  @override
+  String get connect_find_your_space => 'ค้นหากลุ่มของคุณ';
+
+  @override
+  String connect_no_spaces_match(String query) {
+    return 'ไม่พบกลุ่มที่ตรงกับ \"$query\"';
+  }
+
+  @override
+  String get connect_your_spaces => 'กลุ่มของคุณ';
 
   @override
   String get connect_segment_my => 'กลุ่มของคุณ';
@@ -1304,6 +1321,18 @@ class AppLocalizationsTh extends AppLocalizations {
   String get settings_edit_profile => 'แก้ไขโปรไฟล์';
 
   @override
+  String get settings_signed_in_with_google => 'Signed in with Google';
+
+  @override
+  String get settings_signed_in_with_apple => 'Signed in with Apple';
+
+  @override
+  String get settings_signed_in_with_phone => 'Signed in with phone number';
+
+  @override
+  String get settings_signed_in_as => 'Signed in as';
+
+  @override
   String get settings_theme => 'ธีม';
 
   @override
@@ -1966,6 +1995,10 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get group_accumulator_join_error =>
       'ไม่สามารถเข้าร่วมยอดสะสมได้ โปรดลองอีกครั้ง';
+
+  @override
+  String get group_accumulator_practice_unavailable =>
+      'This practice can\'t be opened right now.';
 
   @override
   String get group_accumulator_join_before_practice =>
@@ -3955,6 +3988,10 @@ class AppLocalizationsTh extends AppLocalizations {
       'ระยะเวลาต้องมากกว่า 0';
 
   @override
+  String get timer_duplicate_setup =>
+      'A timer with this duration, sound, and title already exists.';
+
+  @override
   String get splash_tagline_1 => 'พวกเราชาวพุทธปฏิบัติร่วมกัน';
 
   @override
@@ -3968,6 +4005,9 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get timer_duration_hours => 'ชั่วโมง';
+
+  @override
+  String get timer_duration_hr => 'hr';
 
   @override
   String get timer_duration_sec => 'วินาที';
@@ -4073,4 +4113,70 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get reader_tab_versions => 'Versions';
+
+  @override
+  String get chants_filter_all => 'All';
+
+  @override
+  String get chants_chant_books => 'Chant books';
+
+  @override
+  String get chants_filter_single_chants => 'Single chants';
+
+  @override
+  String get chants_my_chant_books => 'My chantbooks';
+
+  @override
+  String get chants_text_only => 'Text-only chants';
+
+  @override
+  String get chants_from_your_spaces => 'From your spaces';
+
+  @override
+  String get chants_explore_more => 'Explore more';
+
+  @override
+  String get chants_create_chant_book => 'Chant book';
+
+  @override
+  String get chants_open_chant => 'Open chant';
+
+  @override
+  String get chants_your_spaces => 'Your spaces';
+
+  @override
+  String get chants_other_spaces => 'Other spaces';
+
+  @override
+  String get chants_search_hint => 'Search chants and chantbooks';
+
+  @override
+  String get chants_cant_find => 'Can\'t find the text you\'re looking for?';
+
+  @override
+  String get chants_request_text => 'Request text';
+
+  @override
+  String get chants_request_done => 'Requested';
+
+  @override
+  String get chants_request_sent => 'Thanks. We\'ve received your request.';
+
+  @override
+  String get chants_request_limit =>
+      'You\'ve sent a lot of requests today. Please try again later.';
+
+  @override
+  String get chants_with_audio => 'Chants with audio';
+
+  @override
+  String get chants_audio_chants => 'Audio chants';
+
+  @override
+  String get reader_no_resources_title =>
+      'ยังไม่มีอรรถกถาหรือฉบับแปลสำหรับส่วนนี้';
+
+  @override
+  String get reader_no_resources_subtitle =>
+      'เราเพิ่มคัมภีร์ใหม่อยู่เสมอ แวะกลับมาเร็ว ๆ นี้';
 }

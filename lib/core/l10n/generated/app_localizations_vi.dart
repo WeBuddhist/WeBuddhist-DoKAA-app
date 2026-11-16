@@ -624,13 +624,30 @@ class AppLocalizationsVi extends AppLocalizations {
   String get connect_landing_title => 'Connect with your Buddhist community';
 
   @override
-  String get connect_popular_spaces => 'Popular spaces';
+  String get connect_looking_for => 'Đang tìm kiếm';
 
   @override
-  String get connect_your_spaces => 'Your spaces';
+  String get connect_sort_spaces => 'Sắp xếp nhóm';
 
   @override
-  String get connect_find_a_space => 'Find a space';
+  String get connect_sort_popular => 'Phổ biến';
+
+  @override
+  String get connect_sort_newly_added => 'Mới thêm';
+
+  @override
+  String get connect_sort_most_active => 'Sôi nổi nhất';
+
+  @override
+  String get connect_find_your_space => 'Tìm nhóm của bạn';
+
+  @override
+  String connect_no_spaces_match(String query) {
+    return 'Không có nhóm nào khớp với \"$query\"';
+  }
+
+  @override
+  String get connect_your_spaces => 'Nhóm của bạn';
 
   @override
   String get connect_segment_my => 'Nhóm của bạn';
@@ -1316,6 +1333,18 @@ class AppLocalizationsVi extends AppLocalizations {
   String get settings_edit_profile => 'Chỉnh sửa hồ sơ';
 
   @override
+  String get settings_signed_in_with_google => 'Signed in with Google';
+
+  @override
+  String get settings_signed_in_with_apple => 'Signed in with Apple';
+
+  @override
+  String get settings_signed_in_with_phone => 'Signed in with phone number';
+
+  @override
+  String get settings_signed_in_as => 'Signed in as';
+
+  @override
   String get settings_theme => 'Giao diện';
 
   @override
@@ -1985,6 +2014,10 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get group_accumulator_join_error =>
       'Không thể tham gia tích lũy. Vui lòng thử lại';
+
+  @override
+  String get group_accumulator_practice_unavailable =>
+      'This practice can\'t be opened right now.';
 
   @override
   String get group_accumulator_join_before_practice =>
@@ -4002,6 +4035,10 @@ class AppLocalizationsVi extends AppLocalizations {
       'Thời lượng phải lớn hơn 0';
 
   @override
+  String get timer_duplicate_setup =>
+      'A timer with this duration, sound, and title already exists.';
+
+  @override
   String get splash_tagline_1 => 'Phật tử chúng ta cùng nhau tu tập';
 
   @override
@@ -4015,6 +4052,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get timer_duration_hours => 'giờ';
+
+  @override
+  String get timer_duration_hr => 'hr';
 
   @override
   String get timer_duration_sec => 'giây';
@@ -4120,4 +4160,70 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get reader_tab_versions => 'Versions';
+
+  @override
+  String get chants_filter_all => 'All';
+
+  @override
+  String get chants_chant_books => 'Chant books';
+
+  @override
+  String get chants_filter_single_chants => 'Single chants';
+
+  @override
+  String get chants_my_chant_books => 'My chantbooks';
+
+  @override
+  String get chants_text_only => 'Text-only chants';
+
+  @override
+  String get chants_from_your_spaces => 'From your spaces';
+
+  @override
+  String get chants_explore_more => 'Explore more';
+
+  @override
+  String get chants_create_chant_book => 'Chant book';
+
+  @override
+  String get chants_open_chant => 'Open chant';
+
+  @override
+  String get chants_your_spaces => 'Your spaces';
+
+  @override
+  String get chants_other_spaces => 'Other spaces';
+
+  @override
+  String get chants_search_hint => 'Search chants and chantbooks';
+
+  @override
+  String get chants_cant_find => 'Can\'t find the text you\'re looking for?';
+
+  @override
+  String get chants_request_text => 'Request text';
+
+  @override
+  String get chants_request_done => 'Requested';
+
+  @override
+  String get chants_request_sent => 'Thanks. We\'ve received your request.';
+
+  @override
+  String get chants_request_limit =>
+      'You\'ve sent a lot of requests today. Please try again later.';
+
+  @override
+  String get chants_with_audio => 'Chants with audio';
+
+  @override
+  String get chants_audio_chants => 'Audio chants';
+
+  @override
+  String get reader_no_resources_title =>
+      'Chưa có chú giải hoặc bản dịch nào cho đoạn này';
+
+  @override
+  String get reader_no_resources_subtitle =>
+      'Chúng tôi thường xuyên bổ sung kinh văn mới; hãy quay lại sau nhé';
 }

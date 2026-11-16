@@ -629,13 +629,30 @@ class AppLocalizationsNe extends AppLocalizations {
   String get connect_landing_title => 'Connect with your Buddhist community';
 
   @override
-  String get connect_popular_spaces => 'Popular spaces';
+  String get connect_looking_for => 'खोज्दै हुनुहुन्छ';
 
   @override
-  String get connect_your_spaces => 'Your spaces';
+  String get connect_sort_spaces => 'स्पेस क्रमबद्ध गर्नुहोस्';
 
   @override
-  String get connect_find_a_space => 'Find a space';
+  String get connect_sort_popular => 'लोकप्रिय';
+
+  @override
+  String get connect_sort_newly_added => 'भर्खरै थपिएका';
+
+  @override
+  String get connect_sort_most_active => 'सबैभन्दा सक्रिय';
+
+  @override
+  String get connect_find_your_space => 'आफ्नो स्पेस खोज्नुहोस्';
+
+  @override
+  String connect_no_spaces_match(String query) {
+    return '\"$query\" सँग मिल्ने कुनै स्पेस फेला परेन';
+  }
+
+  @override
+  String get connect_your_spaces => 'तपाईंका स्पेसहरू';
 
   @override
   String get connect_segment_my => 'तपाईंका स्पेस';
@@ -1330,6 +1347,18 @@ class AppLocalizationsNe extends AppLocalizations {
   String get settings_edit_profile => 'प्रोफाइल सम्पादन गर्नुहोस्';
 
   @override
+  String get settings_signed_in_with_google => 'Signed in with Google';
+
+  @override
+  String get settings_signed_in_with_apple => 'Signed in with Apple';
+
+  @override
+  String get settings_signed_in_with_phone => 'Signed in with phone number';
+
+  @override
+  String get settings_signed_in_as => 'Signed in as';
+
+  @override
   String get settings_theme => 'थिम';
 
   @override
@@ -2000,6 +2029,10 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get group_accumulator_join_error =>
       'संचयमा सामेल हुन असमर्थ। कृपया फेरि प्रयास गर्नुहोस्';
+
+  @override
+  String get group_accumulator_practice_unavailable =>
+      'This practice can\'t be opened right now.';
 
   @override
   String get group_accumulator_join_before_practice =>
@@ -4015,6 +4048,10 @@ class AppLocalizationsNe extends AppLocalizations {
       'Duration must be greater than 0';
 
   @override
+  String get timer_duplicate_setup =>
+      'A timer with this duration, sound, and title already exists.';
+
+  @override
   String get splash_tagline_1 => 'We Buddhists practice together';
 
   @override
@@ -4028,6 +4065,9 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get timer_duration_hours => 'hours';
+
+  @override
+  String get timer_duration_hr => 'hr';
 
   @override
   String get timer_duration_sec => 'sec';
@@ -4133,4 +4173,71 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get reader_tab_versions => 'संस्करणहरू';
+
+  @override
+  String get chants_filter_all => 'सबै';
+
+  @override
+  String get chants_chant_books => 'जप पुस्तकहरू';
+
+  @override
+  String get chants_filter_single_chants => 'एकल जप';
+
+  @override
+  String get chants_my_chant_books => 'मेरा जप पुस्तकहरू';
+
+  @override
+  String get chants_text_only => 'पाठ मात्र भएका जप';
+
+  @override
+  String get chants_from_your_spaces => 'तपाईंका स्पेसहरूबाट';
+
+  @override
+  String get chants_explore_more => 'थप अन्वेषण गर्नुहोस्';
+
+  @override
+  String get chants_create_chant_book => 'जप पुस्तक';
+
+  @override
+  String get chants_open_chant => 'जप खोल्नुहोस्';
+
+  @override
+  String get chants_your_spaces => 'तपाईंका स्पेसहरू';
+
+  @override
+  String get chants_other_spaces => 'अन्य स्पेसहरू';
+
+  @override
+  String get chants_search_hint => 'जप र जप पुस्तकहरू खोज्नुहोस्';
+
+  @override
+  String get chants_cant_find => 'तपाईंले खोजेको पाठ भेटिएन?';
+
+  @override
+  String get chants_request_text => 'पाठ अनुरोध गर्नुहोस्';
+
+  @override
+  String get chants_request_done => 'अनुरोध पठाइयो';
+
+  @override
+  String get chants_request_sent =>
+      'धन्यवाद। हामीले तपाईंको अनुरोध प्राप्त गर्यौं।';
+
+  @override
+  String get chants_request_limit =>
+      'तपाईंले आज धेरै अनुरोध पठाइसक्नुभयो। कृपया पछि फेरि प्रयास गर्नुहोस्।';
+
+  @override
+  String get chants_with_audio => 'अडियो भएका जप';
+
+  @override
+  String get chants_audio_chants => 'अडियो जप';
+
+  @override
+  String get reader_no_resources_title =>
+      'यस खण्डका लागि कुनै टीका वा संस्करण उपलब्ध छैन';
+
+  @override
+  String get reader_no_resources_subtitle =>
+      'हामी नियमित रूपमा नयाँ ग्रन्थहरू थप्छौं; छिट्टै फेरि हेर्नुहोस्';
 }

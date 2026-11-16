@@ -1178,10 +1178,53 @@ class TolgeeAppLocalizations extends AppLocalizations {
   );
 
   @override
-  String get connect_popular_spaces => TolgeeBridge.get(
+  String get connect_looking_for => TolgeeBridge.get(
     localeName,
-    'connect_popular_spaces',
-    () => _fallback.connect_popular_spaces,
+    'connect_looking_for',
+    () => _fallback.connect_looking_for,
+  );
+
+  @override
+  String get connect_sort_spaces => TolgeeBridge.get(
+    localeName,
+    'connect_sort_spaces',
+    () => _fallback.connect_sort_spaces,
+  );
+
+  @override
+  String get connect_sort_popular => TolgeeBridge.get(
+    localeName,
+    'connect_sort_popular',
+    () => _fallback.connect_sort_popular,
+  );
+
+  @override
+  String get connect_sort_newly_added => TolgeeBridge.get(
+    localeName,
+    'connect_sort_newly_added',
+    () => _fallback.connect_sort_newly_added,
+  );
+
+  @override
+  String get connect_sort_most_active => TolgeeBridge.get(
+    localeName,
+    'connect_sort_most_active',
+    () => _fallback.connect_sort_most_active,
+  );
+
+  @override
+  String get connect_find_your_space => TolgeeBridge.get(
+    localeName,
+    'connect_find_your_space',
+    () => _fallback.connect_find_your_space,
+  );
+
+  @override
+  String connect_no_spaces_match(String query) => TolgeeBridge.format(
+    localeName,
+    'connect_no_spaces_match',
+    <String, Object>{'query': query},
+    () => _fallback.connect_no_spaces_match(query),
   );
 
   @override
@@ -1189,13 +1232,6 @@ class TolgeeAppLocalizations extends AppLocalizations {
     localeName,
     'connect_your_spaces',
     () => _fallback.connect_your_spaces,
-  );
-
-  @override
-  String get connect_find_a_space => TolgeeBridge.get(
-    localeName,
-    'connect_find_a_space',
-    () => _fallback.connect_find_a_space,
   );
 
   @override
@@ -2519,6 +2555,34 @@ class TolgeeAppLocalizations extends AppLocalizations {
     localeName,
     'settings_edit_profile',
     () => _fallback.settings_edit_profile,
+  );
+
+  @override
+  String get settings_signed_in_with_google => TolgeeBridge.get(
+    localeName,
+    'settings_signed_in_with_google',
+    () => _fallback.settings_signed_in_with_google,
+  );
+
+  @override
+  String get settings_signed_in_with_apple => TolgeeBridge.get(
+    localeName,
+    'settings_signed_in_with_apple',
+    () => _fallback.settings_signed_in_with_apple,
+  );
+
+  @override
+  String get settings_signed_in_with_phone => TolgeeBridge.get(
+    localeName,
+    'settings_signed_in_with_phone',
+    () => _fallback.settings_signed_in_with_phone,
+  );
+
+  @override
+  String get settings_signed_in_as => TolgeeBridge.get(
+    localeName,
+    'settings_signed_in_as',
+    () => _fallback.settings_signed_in_as,
   );
 
   @override
@@ -3879,6 +3943,13 @@ class TolgeeAppLocalizations extends AppLocalizations {
     localeName,
     'group_accumulator_join_error',
     () => _fallback.group_accumulator_join_error,
+  );
+
+  @override
+  String get group_accumulator_practice_unavailable => TolgeeBridge.get(
+    localeName,
+    'group_accumulator_practice_unavailable',
+    () => _fallback.group_accumulator_practice_unavailable,
   );
 
   @override
@@ -7891,6 +7962,13 @@ class TolgeeAppLocalizations extends AppLocalizations {
   );
 
   @override
+  String get timer_duplicate_setup => TolgeeBridge.get(
+    localeName,
+    'timer_duplicate_setup',
+    () => _fallback.timer_duplicate_setup,
+  );
+
+  @override
   String get splash_tagline_1 => TolgeeBridge.get(
     localeName,
     'splash_tagline_1',
@@ -7923,6 +8001,13 @@ class TolgeeAppLocalizations extends AppLocalizations {
     localeName,
     'timer_duration_hours',
     () => _fallback.timer_duration_hours,
+  );
+
+  @override
+  String get timer_duration_hr => TolgeeBridge.get(
+    localeName,
+    'timer_duration_hr',
+    () => _fallback.timer_duration_hr,
   );
 
   @override
@@ -8146,5 +8231,152 @@ class TolgeeAppLocalizations extends AppLocalizations {
     localeName,
     'reader_tab_versions',
     () => _fallback.reader_tab_versions,
+  );
+
+  @override
+  String get chants_filter_all => TolgeeBridge.get(
+    localeName,
+    'chants_filter_all',
+    () => _fallback.chants_filter_all,
+  );
+
+  @override
+  String get chants_chant_books => TolgeeBridge.get(
+    localeName,
+    'chants_chant_books',
+    () => _fallback.chants_chant_books,
+  );
+
+  @override
+  String get chants_filter_single_chants => TolgeeBridge.get(
+    localeName,
+    'chants_filter_single_chants',
+    () => _fallback.chants_filter_single_chants,
+  );
+
+  @override
+  String get chants_my_chant_books => TolgeeBridge.get(
+    localeName,
+    'chants_my_chant_books',
+    () => _fallback.chants_my_chant_books,
+  );
+
+  @override
+  String get chants_text_only => TolgeeBridge.get(
+    localeName,
+    'chants_text_only',
+    () => _fallback.chants_text_only,
+  );
+
+  @override
+  String get chants_from_your_spaces => TolgeeBridge.get(
+    localeName,
+    'chants_from_your_spaces',
+    () => _fallback.chants_from_your_spaces,
+  );
+
+  @override
+  String get chants_explore_more => TolgeeBridge.get(
+    localeName,
+    'chants_explore_more',
+    () => _fallback.chants_explore_more,
+  );
+
+  @override
+  String get chants_create_chant_book => TolgeeBridge.get(
+    localeName,
+    'chants_create_chant_book',
+    () => _fallback.chants_create_chant_book,
+  );
+
+  @override
+  String get chants_open_chant => TolgeeBridge.get(
+    localeName,
+    'chants_open_chant',
+    () => _fallback.chants_open_chant,
+  );
+
+  @override
+  String get chants_your_spaces => TolgeeBridge.get(
+    localeName,
+    'chants_your_spaces',
+    () => _fallback.chants_your_spaces,
+  );
+
+  @override
+  String get chants_other_spaces => TolgeeBridge.get(
+    localeName,
+    'chants_other_spaces',
+    () => _fallback.chants_other_spaces,
+  );
+
+  @override
+  String get chants_search_hint => TolgeeBridge.get(
+    localeName,
+    'chants_search_hint',
+    () => _fallback.chants_search_hint,
+  );
+
+  @override
+  String get chants_cant_find => TolgeeBridge.get(
+    localeName,
+    'chants_cant_find',
+    () => _fallback.chants_cant_find,
+  );
+
+  @override
+  String get chants_request_text => TolgeeBridge.get(
+    localeName,
+    'chants_request_text',
+    () => _fallback.chants_request_text,
+  );
+
+  @override
+  String get chants_request_done => TolgeeBridge.get(
+    localeName,
+    'chants_request_done',
+    () => _fallback.chants_request_done,
+  );
+
+  @override
+  String get chants_request_sent => TolgeeBridge.get(
+    localeName,
+    'chants_request_sent',
+    () => _fallback.chants_request_sent,
+  );
+
+  @override
+  String get chants_request_limit => TolgeeBridge.get(
+    localeName,
+    'chants_request_limit',
+    () => _fallback.chants_request_limit,
+  );
+
+  @override
+  String get chants_with_audio => TolgeeBridge.get(
+    localeName,
+    'chants_with_audio',
+    () => _fallback.chants_with_audio,
+  );
+
+  @override
+  String get chants_audio_chants => TolgeeBridge.get(
+    localeName,
+    'chants_audio_chants',
+    () => _fallback.chants_audio_chants,
+  );
+
+  @override
+  String get reader_no_resources_title => TolgeeBridge.get(
+    localeName,
+    'reader_no_resources_title',
+    () => _fallback.reader_no_resources_title,
+  );
+
+  @override
+  String get reader_no_resources_subtitle => TolgeeBridge.get(
+    localeName,
+    'reader_no_resources_subtitle',
+    () => _fallback.reader_no_resources_subtitle,
   );
 }

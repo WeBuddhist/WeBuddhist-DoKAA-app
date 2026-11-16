@@ -598,13 +598,30 @@ class AppLocalizationsZh extends AppLocalizations {
   String get connect_landing_title => 'Connect with your Buddhist community';
 
   @override
-  String get connect_popular_spaces => 'Popular spaces';
+  String get connect_looking_for => '正在尋找';
 
   @override
-  String get connect_your_spaces => 'Your spaces';
+  String get connect_sort_spaces => '排序社群';
 
   @override
-  String get connect_find_a_space => 'Find a space';
+  String get connect_sort_popular => '熱門';
+
+  @override
+  String get connect_sort_newly_added => '最新加入';
+
+  @override
+  String get connect_sort_most_active => '最活躍';
+
+  @override
+  String get connect_find_your_space => '尋找你的社群';
+
+  @override
+  String connect_no_spaces_match(String query) {
+    return '找不到符合「$query」的社群';
+  }
+
+  @override
+  String get connect_your_spaces => '你的社群';
 
   @override
   String get connect_segment_my => '您的社群';
@@ -1264,6 +1281,18 @@ class AppLocalizationsZh extends AppLocalizations {
   String get settings_edit_profile => '編輯個人檔案';
 
   @override
+  String get settings_signed_in_with_google => 'Signed in with Google';
+
+  @override
+  String get settings_signed_in_with_apple => 'Signed in with Apple';
+
+  @override
+  String get settings_signed_in_with_phone => 'Signed in with phone number';
+
+  @override
+  String get settings_signed_in_as => 'Signed in as';
+
+  @override
   String get settings_theme => '主題';
 
   @override
@@ -1893,6 +1922,10 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get group_accumulator_join_error => '無法加入計數統計，請再試一次';
+
+  @override
+  String get group_accumulator_practice_unavailable =>
+      'This practice can\'t be opened right now.';
 
   @override
   String get group_accumulator_join_before_practice => '先加入本共修計數活動，再將它加入您的修持計畫';
@@ -3843,6 +3876,10 @@ class AppLocalizationsZh extends AppLocalizations {
       'Duration must be greater than 0';
 
   @override
+  String get timer_duplicate_setup =>
+      'A timer with this duration, sound, and title already exists.';
+
+  @override
   String get splash_tagline_1 => 'We Buddhists practice together';
 
   @override
@@ -3856,6 +3893,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get timer_duration_hours => 'hours';
+
+  @override
+  String get timer_duration_hr => 'hr';
 
   @override
   String get timer_duration_sec => 'sec';
@@ -3961,6 +4001,69 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get reader_tab_versions => '版本';
+
+  @override
+  String get chants_filter_all => '全部';
+
+  @override
+  String get chants_chant_books => '持誦集';
+
+  @override
+  String get chants_filter_single_chants => '單篇持誦';
+
+  @override
+  String get chants_my_chant_books => '我的持誦集';
+
+  @override
+  String get chants_text_only => '純文字持誦';
+
+  @override
+  String get chants_from_your_spaces => '來自你的社群';
+
+  @override
+  String get chants_explore_more => '探索更多';
+
+  @override
+  String get chants_create_chant_book => '持誦集';
+
+  @override
+  String get chants_open_chant => '開啟持誦';
+
+  @override
+  String get chants_your_spaces => '你的社群';
+
+  @override
+  String get chants_other_spaces => '其他社群';
+
+  @override
+  String get chants_search_hint => '搜尋持誦與持誦集';
+
+  @override
+  String get chants_cant_find => '找不到你要的經文嗎？';
+
+  @override
+  String get chants_request_text => '申請經文';
+
+  @override
+  String get chants_request_done => '已申請';
+
+  @override
+  String get chants_request_sent => '謝謝，我們已收到你的申請。';
+
+  @override
+  String get chants_request_limit => '你今天已送出許多申請，請稍後再試。';
+
+  @override
+  String get chants_with_audio => '有音檔的持誦';
+
+  @override
+  String get chants_audio_chants => '音檔持誦';
+
+  @override
+  String get reader_no_resources_title => '此段落尚無注釋或版本';
+
+  @override
+  String get reader_no_resources_subtitle => '我們會定期新增文本，請稍後再來查看';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hans`).
@@ -4549,6 +4652,32 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
 
   @override
   String get connect_tab_groups => '社群';
+
+  @override
+  String get connect_looking_for => '正在寻找';
+
+  @override
+  String get connect_sort_spaces => '排序社群';
+
+  @override
+  String get connect_sort_popular => '热门';
+
+  @override
+  String get connect_sort_newly_added => '最新加入';
+
+  @override
+  String get connect_sort_most_active => '最活跃';
+
+  @override
+  String get connect_find_your_space => '寻找你的社群';
+
+  @override
+  String connect_no_spaces_match(String query) {
+    return '找不到符合“$query”的社群';
+  }
+
+  @override
+  String get connect_your_spaces => '你的社群';
 
   @override
   String get connect_segment_my => '您的社群';
@@ -7686,4 +7815,67 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
 
   @override
   String get reader_tab_versions => '版本';
+
+  @override
+  String get chants_filter_all => '全部';
+
+  @override
+  String get chants_chant_books => '持诵集';
+
+  @override
+  String get chants_filter_single_chants => '单篇持诵';
+
+  @override
+  String get chants_my_chant_books => '我的持诵集';
+
+  @override
+  String get chants_text_only => '纯文字持诵';
+
+  @override
+  String get chants_from_your_spaces => '来自你的社群';
+
+  @override
+  String get chants_explore_more => '探索更多';
+
+  @override
+  String get chants_create_chant_book => '持诵集';
+
+  @override
+  String get chants_open_chant => '打开持诵';
+
+  @override
+  String get chants_your_spaces => '你的社群';
+
+  @override
+  String get chants_other_spaces => '其他社群';
+
+  @override
+  String get chants_search_hint => '搜索持诵与持诵集';
+
+  @override
+  String get chants_cant_find => '找不到你要的经文吗？';
+
+  @override
+  String get chants_request_text => '申请经文';
+
+  @override
+  String get chants_request_done => '已申请';
+
+  @override
+  String get chants_request_sent => '谢谢，我们已收到你的申请。';
+
+  @override
+  String get chants_request_limit => '你今天已提交许多申请，请稍后再试。';
+
+  @override
+  String get chants_with_audio => '有音频的持诵';
+
+  @override
+  String get chants_audio_chants => '音频持诵';
+
+  @override
+  String get reader_no_resources_title => '此段落尚无注释或版本';
+
+  @override
+  String get reader_no_resources_subtitle => '我们会定期新增文本，请稍后再来查看';
 }
